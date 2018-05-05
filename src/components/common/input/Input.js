@@ -8,17 +8,18 @@ class Input extends Component {
       onChange,
       placeholder,
       type,
-      name
+      name,
+      icon
     } = this.props;
 
     return (
       <div className="pt-input-group pt-large">
-        <span className="pt-icon pt-icon-search"></span>
-        <input 
-          className="pt-input pt-large" 
+        <span className={`pt-icon ${icon}`} />
+        <input
+          className="pt-input pt-large"
           type={type}
           placeholder={placeholder}
-          dir="auto" 
+          dir="auto"
           value={value}
           onChange={(e) => onChange(e)}
           name={name}
@@ -34,7 +35,8 @@ Input.propTypes = {
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
   type: PropTypes.string,
-  name: PropTypes.string
+  name: PropTypes.string,
+  icon: PropTypes.string
 };
 
 export default Input;
