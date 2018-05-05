@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import { FormGroup } from "@blueprintjs/core";
+import Input from './components/common/input/Input';
 
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  
   render() {
     return (
       <div className="App">
@@ -12,10 +18,13 @@ class App extends Component {
           <FormGroup
             label="Gif Category"
           >
-            <div className="pt-input-group pt-large">
-              <span className="pt-icon pt-icon-search"></span>
-              <input className="pt-input pt-large" type="search" placeholder="Tacos" dir="auto" />
-            </div>
+            <Input 
+              value="" 
+              onChange={(e) => console.log(e.target.name, 'test')}
+              placeholder="Tacos"
+              type="search"
+              name='category'
+            /> 
           </FormGroup>
         </div>
       </div>
