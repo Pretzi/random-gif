@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FormGroup, Button } from "@blueprintjs/core";
 import Input from './components/common/input/Input';
+import PropTypes from 'prop-types';
 
 import './App.css';
 
@@ -21,7 +22,17 @@ class App extends Component {
   }
 
   handleSubmit() {
+    const {
+      category,
+      numberOfImages,
+      timer
+    } = this.state;
 
+    this.props.fetchGifs(
+      category,
+      numberOfImages,
+      timer
+    );
   }
 
   render() {
@@ -67,7 +78,7 @@ class App extends Component {
             intent="PRIMARY" 
             text="Search" 
             large
-            onClick={() => alert('test')}
+            onClick={this.handleSubmit}
           />
         </div>
       </div>
@@ -75,4 +86,10 @@ class App extends Component {
   }
 }
 
+App.displayName = 'App';
+App.propTypes = {
+  fetchGifs: PropTypes.func
+};
+
 export default App;
+
