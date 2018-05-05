@@ -10,7 +10,7 @@ class App extends Component {
     super(props);
     this.state = {
       category: '',
-      timer: 0,
+      timer: 10,
       numberOfImages: 3
     };
   }
