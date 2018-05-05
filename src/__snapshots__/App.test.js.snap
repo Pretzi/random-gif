@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> Should render as expected 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="App__container"
+>
+        <h2
+                className="App__title"
+        >
+                Search Random Gifs
+        </h2>
+        <FormGroup
+                label="Gif Category"
+        >
+                <Input
+                        name="category"
+                        onChange={[Function]}
+                        placeholder="Tacos"
+                        type="search"
+                        value=""
+                />
+        </FormGroup>
+</div>,
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            className="App__title"
+>
+            Search Random Gifs
+</h2>,
+          <FormGroup
+            label="Gif Category"
+>
+            <Input
+                        name="category"
+                        onChange={[Function]}
+                        placeholder="Tacos"
+                        type="search"
+                        value=""
+            />
+</FormGroup>,
+        ],
+        "className": "App__container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Search Random Gifs",
+            "className": "App__title",
+          },
+          "ref": null,
+          "rendered": "Search Random Gifs",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Input
+              name="category"
+              onChange={[Function]}
+              placeholder="Tacos"
+              type="search"
+              value=""
+/>,
+            "label": "Gif Category",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "name": "category",
+              "onChange": [Function],
+              "placeholder": "Tacos",
+              "type": "search",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="App__container"
+>
+          <h2
+                    className="App__title"
+          >
+                    Search Random Gifs
+          </h2>
+          <FormGroup
+                    label="Gif Category"
+          >
+                    <Input
+                              name="category"
+                              onChange={[Function]}
+                              placeholder="Tacos"
+                              type="search"
+                              value=""
+                    />
+          </FormGroup>
+</div>,
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="App__title"
+>
+              Search Random Gifs
+</h2>,
+            <FormGroup
+              label="Gif Category"
+>
+              <Input
+                            name="category"
+                            onChange={[Function]}
+                            placeholder="Tacos"
+                            type="search"
+                            value=""
+              />
+</FormGroup>,
+          ],
+          "className": "App__container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Search Random Gifs",
+              "className": "App__title",
+            },
+            "ref": null,
+            "rendered": "Search Random Gifs",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Input
+                name="category"
+                onChange={[Function]}
+                placeholder="Tacos"
+                type="search"
+                value=""
+/>,
+              "label": "Gif Category",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "name": "category",
+                "onChange": [Function],
+                "placeholder": "Tacos",
+                "type": "search",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
