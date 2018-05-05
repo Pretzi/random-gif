@@ -6,7 +6,7 @@ import { createLogicMiddleware } from 'redux-logic';
 import reducers from './reducers';
 import logics from './logics';
 import './index.css';
-import AppContainer from './containers/AppContainer';
+import App from './App';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -25,7 +25,7 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <AppContainer />
+    <App />
   </Provider>,
   document.getElementById('root')
 );
