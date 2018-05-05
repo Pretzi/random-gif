@@ -9,7 +9,8 @@ class App extends Component {
     super(props);
     this.state = {
       category: '',
-      timer: 0
+      timer: 0,
+      numberOfImages: 3
     };
   }
 
@@ -17,6 +18,10 @@ class App extends Component {
     this.setState({
       [e.target.name]: e.target.value
     });
+  }
+
+  handleSubmit() {
+
   }
 
   render() {
@@ -33,6 +38,17 @@ class App extends Component {
               type="string"
               name="category"
               icon="pt-icon-tag"
+            /> 
+          </FormGroup>
+
+          <FormGroup label="Number Of Images">
+            <Input 
+              value={this.state.numberOfImages} 
+              onChange={e => this.handleInputChange(e)}
+              placeholder="3"
+              name="numberOfImages"
+              type="number"
+              icon="pt-icon-media"
             /> 
           </FormGroup>
 
