@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormGroup } from "@blueprintjs/core";
+import { FormGroup, Button } from "@blueprintjs/core";
 import Input from './components/common/input/Input';
 
 import './App.css';
@@ -30,13 +30,13 @@ class App extends Component {
               value={this.state.category} 
               onChange={e => this.handleInputChange(e)}
               placeholder="Tacos"
-              type="search"
+              type="string"
               name="category"
-              icon="pt-icon-search"
+              icon="pt-icon-tag"
             /> 
           </FormGroup>
 
-          <FormGroup label="Timer">
+          <FormGroup label="Timer" helperText="Time is in seconds">
             <Input 
               value={this.state.timer} 
               onChange={e => this.handleInputChange(e)}
@@ -47,6 +47,12 @@ class App extends Component {
             /> 
           </FormGroup>
 
+          <Button 
+            intent="PRIMARY" 
+            text="Search" 
+            large
+            onClick={() => alert('test')}
+          />
         </div>
       </div>
     );
