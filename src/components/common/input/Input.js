@@ -29,7 +29,7 @@ class Input extends Component {
   }
 }
 
-Input.displayName = 'Input';
+Input.displayName = 'App.Input';
 Input.propTypes = {
   value: PropTypes.string,
   onChange: PropTypes.func,
