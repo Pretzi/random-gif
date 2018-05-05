@@ -7,9 +7,17 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      category: ''
+    };
   }
-  
+
+  handleInputChange(e) {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -19,8 +27,8 @@ class App extends Component {
             label="Gif Category"
           >
             <Input 
-              value="" 
-              onChange={(e) => console.log(e.target.name, 'test')}
+              value={this.state.category} 
+              onChange={e => this.handleInputChange(e)}
               placeholder="Tacos"
               type="search"
               name='category'
