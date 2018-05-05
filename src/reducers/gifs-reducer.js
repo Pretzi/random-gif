@@ -22,7 +22,10 @@ export default function reducer(state = initialState, action) {
     case FETCH_GIFS_SUCCESS: {
       return Object.assign({}, state, {
         loading: false,
-        entities: action.payload
+        entities: [
+          ...state.entities,
+          action.payload
+        ]
       });
     }
 

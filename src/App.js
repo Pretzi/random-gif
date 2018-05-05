@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FormGroup, Button } from "@blueprintjs/core";
 import Input from './components/common/input/Input';
+import RandomGifs from './components/random-gifs/RandomGifs';
 import PropTypes from 'prop-types';
 
 import './App.css';
@@ -8,11 +9,14 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       category: '',
       timer: 10,
       numberOfImages: 3
     };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleInputChange(e) {
@@ -36,6 +40,10 @@ class App extends Component {
   }
 
   render() {
+    const {
+      gifs
+    } = this.props
+    
     return (
       <div className="App">
         <div className="App__container">
@@ -80,6 +88,8 @@ class App extends Component {
             large
             onClick={this.handleSubmit}
           />
+
+          <RandomGifs gifs={gifs}/>
         </div>
       </div>
     );
