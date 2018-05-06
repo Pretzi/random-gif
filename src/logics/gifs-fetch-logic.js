@@ -15,7 +15,10 @@ export const fetchGifs = createLogic({
   latest: true,
   warnTimeout: 0,
   cancelType: FETCH_GIFS_CANCEL,
-  process({axios, APIKEY, action, getState }, dispatch, done) {
+  processOptions: {
+    dispatchMultiple: true
+  },
+  process({axios, APIKEY, action, getState }, dispatch) {
     const {
       category,
       numberOfImages,
@@ -36,7 +39,7 @@ export const fetchGifs = createLogic({
         }
       })
       .then(response => {
-        if (response.status === 200) {
+        if (response.data.data) {
           const gif = response.data.data;
 
           if (gif.length === 0) {
@@ -50,12 +53,12 @@ export const fetchGifs = createLogic({
             dispatch({
               type: FETCH_GIFS_CANCEL
             })
+          } else {
+            dispatch({
+              type: FETCH_GIFS_SUCCESS,
+              payload: gif
+            });
           }
-
-          dispatch({
-            type: FETCH_GIFS_SUCCESS,
-            payload: gif
-          });
         }
       })
       .catch(() => {
