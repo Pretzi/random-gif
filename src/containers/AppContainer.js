@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import { gifsActions } from '../actions/gifs-actions'
-import App from '../App';
 
 const {
-  FETCH_GIFS
+  FETCH_GIFS,
+  CLEAR_GIFS,
 } = gifsActions;
 
 const mapStateToProps = (state, ownProps) => {
@@ -16,6 +16,9 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     fetchGifs(category, numberOfImages, timer) {
+      dispatch({
+        type: CLEAR_GIFS
+      });
       dispatch({
         type: FETCH_GIFS,
         payload: {
