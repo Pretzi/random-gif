@@ -1,9 +1,10 @@
 {
-  "name": "appcalister-test",
-  "version": "0.1.0",
-  "private": true,
+  "name": "appcalister-test-random-gifs",
+  "version": "0.1.6",
+  "main": "lib/index.js",
   "dependencies": {
     "@blueprintjs/core": "^2.3.1",
+    "appcalister-test-random-gifs": "0.1.2",
     "axios": "^0.18.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -22,6 +23,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile": "NODE_ENV=production babel src --out-dir lib --copy-files"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }

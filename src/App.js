@@ -4,7 +4,6 @@ import AppContainer from './containers/AppContainer';
 import Input from './components/common/input/Input';
 import RandomGifs from './components/random-gifs/RandomGifs';
 import PropTypes from 'prop-types';
-
 import './App.css';
 
 export class App extends Component {

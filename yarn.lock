@@ -191,6 +191,26 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
+appcalister-test-random-gifs@0.1.2, appcalister-test-random-gifs@^0.1.1:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/appcalister-test-random-gifs/-/appcalister-test-random-gifs-0.1.2.tgz#04e5b12ce320e6bc2d6c8ce2c4902cb1c1531282"
+  dependencies:
+    "@blueprintjs/core" "^2.3.1"
+    appcalister-test-random-gifs "^0.1.1"
+    axios "^0.18.0"
+    enzyme "^3.3.0"
+    enzyme-adapter-react-16 "^1.1.1"
+    jest-enzyme "^6.0.0"
+    react "^16.3.2"
+    react-dom "^16.3.2"
+    react-redux "^5.0.7"
+    react-scripts "1.1.4"
+    react-test-renderer "^16.3.2"
+    react-transition-group "^2.3.1"
+    redux "^4.0.0"
+    redux-logic "^0.12.3"
+    rxjs "^5.5.10"
+
 append-transform@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/append-transform/-/append-transform-0.4.0.tgz#d76ebf8ca94d276e247a36bad44a4b74ab611991"
