@@ -34,7 +34,7 @@ showTimer | true
 Run tests
 ```sh
 yarn
-yarn start
+npm start
 ```
 
 Run tests
