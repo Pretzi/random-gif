@@ -10,13 +10,15 @@ const {
 const initialState = {
   loading: false,
   entities: [],
+  notFound: false
 };
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case FETCH_GIFS: {
       return Object.assign({}, state, {
-        loading: true
+        loading: true,
+        notFound: false
       });
     }
 
@@ -32,7 +34,8 @@ export default function reducer(state = initialState, action) {
 
     case FETCH_GIFS_ERROR: {
       return Object.assign({}, state, {
-        loading: false
+        loading: false,
+        notFound: action.payload.notFound
       });
     }
 
