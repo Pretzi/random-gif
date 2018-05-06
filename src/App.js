@@ -32,7 +32,9 @@ class App extends Component {
     });
   }
 
-  handleSubmit() {
+  handleSubmit(e) {
+    e.preventDefault();
+
     const {
       category,
       numberOfImages,
@@ -58,7 +60,7 @@ class App extends Component {
       <div className="App">
         <div className="App__container">
           <h2 className="App__title">Search Random Gifs</h2>
-
+          <form onSubmit={this.handleSubmit}>
           <FormGroup label="Gif Category">
             <Input
               value={this.state.category}
@@ -102,6 +104,7 @@ class App extends Component {
             large
             onClick={this.handleSubmit}
           />
+          </form>
 
           <div className="App__gif-container">
             <RandomGifs gifs={gifs} />
