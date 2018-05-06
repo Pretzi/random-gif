@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import { createLogicMiddleware } from 'redux-logic';
+import { Provider } from 'react-redux';
 import axios from 'axios';
 import reducers from './reducers';
 import logics from './logics';
@@ -31,6 +32,12 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-const ApplicasterTest = () => <RandomGifsComponent store={store} />;
+const ApplicasterTest = (props) => {
+  return (
+    <Provider store={store}>
+      <RandomGifsComponent {...props} />
+    </Provider>
+  )
+};
 
 export default ApplicasterTest
