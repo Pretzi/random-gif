@@ -41,7 +41,7 @@ class App extends Component {
 
     this.props.fetchGifs(
       category,
-      numberOfImages,
+      Number(numberOfImages),
       timer
     );
   }
