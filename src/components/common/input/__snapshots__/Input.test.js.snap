@@ -4,7 +4,7 @@ exports[`<Input /> Should render as expected 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Input
+  Symbol(enzyme.__unrendered__): <App.Input
     onChange={[Function]}
     placeholder="Search"
     type="search"
@@ -24,7 +24,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <span
-          className="pt-icon pt-icon-search"
+          className="pt-icon undefined"
 />,
         <input
           className="pt-input pt-large"
@@ -45,7 +45,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "pt-icon pt-icon-search",
+          "className": "pt-icon undefined",
         },
         "ref": null,
         "rendered": null,
@@ -79,7 +79,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <span
-            className="pt-icon pt-icon-search"
+            className="pt-icon undefined"
 />,
           <input
             className="pt-input pt-large"
@@ -100,7 +100,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "pt-icon pt-icon-search",
+            "className": "pt-icon undefined",
           },
           "ref": null,
           "rendered": null,
