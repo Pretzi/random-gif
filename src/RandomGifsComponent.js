@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { FormGroup, Button, Spinner } from "@blueprintjs/core";
-import AppContainer from './containers/AppContainer';
+import RandomGifsContainer from './containers/RandomGifsContainer';
 import Input from './components/common/input/Input';
 import RandomGifs from './components/random-gifs/RandomGifs';
 import PropTypes from 'prop-types';
-import './App.css';
+import './RandomGifsComponent.css';
 
-export class App extends Component {
+export class RandomGifsComponent extends Component {
   constructor(props) {
     super(props);
 
@@ -59,12 +59,12 @@ export class App extends Component {
     } = this.props
 
     return (
-      <div className="App">
-        <div className="App__container">
-          <h2 className="App__title">Search Random Gifs</h2>
+      <div className="RandomGifsComponent">
+        <div className="RandomGifsComponent__container">
+          <h2 className="RandomGifsComponent__title">Search Random Gifs</h2>
 
           <form
-            className="App__form"
+            className="RandomGifsComponent__form"
             onSubmit={this.handleSubmit}
           >
             <FormGroup label="Gif Category">
@@ -113,16 +113,20 @@ export class App extends Component {
             />
           </form>
 
-          <div className="App__gif-container">
+          <div className="RandomGifsComponent__gif-container">
             <RandomGifs gifs={gifs} />
 
             {loading && <Spinner />}
 
             {notFound &&
-              <span className="App__error">Gifs not found</span>
+              <span className="RandomGifsComponent__error">
+                Gifs not found
+              </span>
             }
-            { error &&
-              <span className="App__error">There was an error</span>
+            {error &&
+              <span className="RandomGifsComponent__error">
+                There was an error
+              </span>
             }
           </div>
         </div>
@@ -131,11 +135,11 @@ export class App extends Component {
   }
 }
 
-App.displayName = 'App';
-App.propTypes = {
+RandomGifsComponent.displayName = 'RandomGifsComponent';
+RandomGifsComponent.propTypes = {
   fetchGifs: PropTypes.func
 };
-App.defaultProps = {
+RandomGifsComponent.defaultProps = {
   category: '',
   numberOfImages: 3,
   timer: 10,
@@ -143,5 +147,5 @@ App.defaultProps = {
   showTimer: true,
 };
 
-export default AppContainer(App);
+export default RandomGifsContainer(RandomGifsComponent);
 

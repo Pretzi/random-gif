@@ -1,20 +1,20 @@
 import React from 'react';
-import { App } from './App';
+import { RandomGifsComponent } from './RandomGifsComponent';
 import { shallow } from 'enzyme';
 import { Spinner } from "@blueprintjs/core";
 
 
-describe('<App />', () => {
+describe('<RandomGifs />', () => {
   it('Should render as expected default', () => {
     const wrapper = shallow(
-      <App />
+      <RandomGifs />
     );
     expect(wrapper).toMatchSnapshot();
   })
 
   it('Should render without numberOfImages and Timer', () => {
     const wrapper = shallow(
-      <App
+      <RandomGifs
         showNumberOfImages={false}
         showTimer={false}
       />
@@ -24,7 +24,7 @@ describe('<App />', () => {
 
   it('Should render with Spinner', () => {
     const wrapper = shallow(
-      <App loading={true} />
+      <RandomGifs loading={true} />
     );
     expect(wrapper).toMatchSnapshot();
     expect(wrapper.contains(<Spinner />)).toEqual(true);
@@ -33,7 +33,7 @@ describe('<App />', () => {
 
   it('Should render with error message', () => {
     const wrapper = shallow(
-      <App error={true} />
+      <RandomGifs error={true} />
     );
     expect(wrapper).toMatchSnapshot();
     expect(wrapper.contains(
@@ -43,7 +43,7 @@ describe('<App />', () => {
 
   it('Should render with notFound message', () => {
     const wrapper = shallow(
-      <App notFound={true} />
+      <RandomGifs notFound={true} />
     );
     expect(wrapper).toMatchSnapshot();
     expect(wrapper.contains(
@@ -54,7 +54,7 @@ describe('<App />', () => {
   it('Should call fetchGifs when submit', () => {
     const fetchGifs = jest.fn();
     const wrapper = shallow(
-      <App fetchGifs={fetchGifs} />
+      <RandomGifs fetchGifs={fetchGifs} />
     );
     wrapper.find('form').simulate('submit', { preventDefault: jest.fn() })
     expect(fetchGifs).toHaveBeenCalled();
@@ -63,7 +63,7 @@ describe('<App />', () => {
   it('Should call fetchGifs when click on button', () => {
     const fetchGifs = jest.fn();
     const wrapper = shallow(
-      <App fetchGifs={fetchGifs} />
+      <RandomGifs fetchGifs={fetchGifs} />
     );
     wrapper.find('Button').simulate('click', { preventDefault: jest.fn() })
     expect(fetchGifs).toHaveBeenCalled();
@@ -71,7 +71,7 @@ describe('<App />', () => {
 
   it('Should change value of category state when onChange', () => {
     const wrapper = shallow(
-      <App />
+      <RandomGifs />
     );
     wrapper.find('Input').first().simulate('change', {
       target: {
@@ -84,7 +84,7 @@ describe('<App />', () => {
 
   it('Should change value of numberofImages state when onChange', () => {
     const wrapper = shallow(
-      <App />
+      <RandomGifs />
     );
     wrapper.find('Input').first().simulate('change', {
       target: {
@@ -97,7 +97,7 @@ describe('<App />', () => {
 
   it('Should change value of timer state when onChange', () => {
     const wrapper = shallow(
-      <App />
+      <RandomGifs />
     );
     wrapper.find('Input').first().simulate('change', {
       target: {
