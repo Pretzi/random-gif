@@ -1,3 +1,7 @@
+.RandomGifsComponent {
+  width: 100%;
+}
+
 .RandomGifsComponent__container {
   display: flex;
   max-width: 500px;

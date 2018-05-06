@@ -1,6 +1,6 @@
 {
   "name": "appcalister-test-random-gifs",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "dependencies": {
     "@blueprintjs/core": "^2.3.1",
