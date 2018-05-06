@@ -19,3 +19,9 @@
 .pt-label {
   font-weight: bold;
 }
+
+.App__gif-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormGroup, Button } from "@blueprintjs/core";
+import { FormGroup, Button, Spinner } from "@blueprintjs/core";
 import AppContainer from './containers/AppContainer';
 import Input from './components/common/input/Input';
 import RandomGifs from './components/random-gifs/RandomGifs';
@@ -50,7 +50,8 @@ class App extends Component {
     const {
       gifs,
       showNumberOfImages,
-      showTimer
+      showTimer,
+      loading
     } = this.props
 
     return (
@@ -102,7 +103,10 @@ class App extends Component {
             onClick={this.handleSubmit}
           />
 
-          <RandomGifs gifs={gifs} />
+          <div className="App__gif-container">
+            <RandomGifs gifs={gifs} />
+            {loading && <Spinner />}
+          </div>
         </div>
       </div>
     );
