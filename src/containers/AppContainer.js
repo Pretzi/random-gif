@@ -8,7 +8,8 @@ const {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    gifs: state.gifs.entities
+    gifs: state.gifs.entities,
+    loading: state.gifs.loading
   }
 };
 
