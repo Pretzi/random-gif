@@ -3,7 +3,8 @@ import { gifsActions } from '../actions/gifs-actions';
 const {
   FETCH_GIFS,
   FETCH_GIFS_SUCCESS,
-  FETCH_GIFS_ERROR
+  FETCH_GIFS_ERROR,
+  CLEAR_GIFS
 } = gifsActions;
 
 const initialState = {
@@ -32,6 +33,12 @@ export default function reducer(state = initialState, action) {
     case FETCH_GIFS_ERROR: {
       return Object.assign({}, state, {
         loading: false
+      });
+    }
+
+    case CLEAR_GIFS: {
+      return Object.assign({}, state, {
+        entities: []
       });
     }
 
