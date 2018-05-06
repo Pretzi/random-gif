@@ -53,7 +53,8 @@ class App extends Component {
       gifs,
       showNumberOfImages,
       showTimer,
-      loading
+      loading,
+      notFound
     } = this.props
 
     return (
@@ -113,6 +114,9 @@ class App extends Component {
           <div className="App__gif-container">
             <RandomGifs gifs={gifs} />
             {loading && <Spinner />}
+            {notFound &&
+              <span className="App__not-found">Gifs not found</span>
+            }
           </div>
         </div>
       </div>
@@ -129,7 +133,7 @@ App.defaultProps = {
   numberOfImages: 3,
   timer: 10,
   showNumberOfImages: true,
-  showTimer: true
+  showTimer: true,  
 };
 
 export default AppContainer(App);

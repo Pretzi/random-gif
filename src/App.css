@@ -27,6 +27,10 @@
   align-items: center;
 }
 
+.App__not-found {
+  font-weight: bold;
+}
+
 .pt-label {
   font-weight: bold;
 }
