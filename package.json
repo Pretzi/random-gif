@@ -1,10 +1,9 @@
 {
   "name": "appcalister-test-random-gifs",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "dependencies": {
     "@blueprintjs/core": "^2.3.1",
-    "appcalister-test-random-gifs": "0.1.2",
     "axios": "^0.18.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",

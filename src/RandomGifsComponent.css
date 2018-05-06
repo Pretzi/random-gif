@@ -1,6 +1,6 @@
 .RandomGifsComponent__container {
   display: flex;
-  width: 500px;
+  max-width: 500px;
   flex-direction: column;
 }
 
