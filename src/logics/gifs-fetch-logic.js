@@ -37,15 +37,32 @@ export const fetchGifs = createLogic({
         }
       })
         .then(response => {
-          dispatch({
-            type: FETCH_GIFS_SUCCESS,
-            payload: response.data.data
-          })
+          if (response.status === 200) {
+            const gif = response.data.data;
+
+            if(gif.length === 0) {
+              dispatch({
+                type: FETCH_GIFS_ERROR,
+                payload: {
+                  notFound: true
+                }
+              });
+              
+              dispatch({
+                type: FETCH_GIFS_CANCEL
+              })
+            }
+
+            dispatch({
+              type: FETCH_GIFS_SUCCESS,
+              payload: gif
+            });
+          }
         })
         .catch(() => {
           dispatch({
             type: FETCH_GIFS_ERROR
-          })
+          });
         })
     }
 
