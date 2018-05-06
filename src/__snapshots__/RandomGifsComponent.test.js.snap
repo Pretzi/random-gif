@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App /> Should render as expected default 1`] = `
+exports[`<RandomGifsComponent /> Should render as expected default 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
+  Symbol(enzyme.__unrendered__): <RandomGifsComponent
     category=""
     numberOfImages={3}
     showNumberOfImages={true}
@@ -24,15 +24,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div
-        className="App__container"
+        className="RandomGifsComponent__container"
 >
         <h2
-                className="App__title"
+                className="RandomGifsComponent__title"
         >
                 Search Random Gifs
         </h2>
         <form
-                className="App__form"
+                className="RandomGifsComponent__form"
                 onSubmit={[Function]}
         >
                 <FormGroup
@@ -81,14 +81,14 @@ ShallowWrapper {
                 />
         </form>
         <div
-                className="App__gif-container"
+                className="RandomGifsComponent__gif-container"
         >
                 <RandomGifs
                         gifs={undefined}
                 />
         </div>
 </div>,
-      "className": "App",
+      "className": "RandomGifsComponent",
     },
     "ref": null,
     "rendered": Object {
@@ -98,12 +98,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2
-            className="App__title"
+            className="RandomGifsComponent__title"
 >
             Search Random Gifs
 </h2>,
           <form
-            className="App__form"
+            className="RandomGifsComponent__form"
             onSubmit={[Function]}
 >
             <FormGroup
@@ -152,14 +152,14 @@ ShallowWrapper {
             />
 </form>,
           <div
-            className="App__gif-container"
+            className="RandomGifsComponent__gif-container"
 >
             <RandomGifs
                         gifs={undefined}
             />
 </div>,
         ],
-        "className": "App__container",
+        "className": "RandomGifsComponent__container",
       },
       "ref": null,
       "rendered": Array [
@@ -169,7 +169,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Search Random Gifs",
-            "className": "App__title",
+            "className": "RandomGifsComponent__title",
           },
           "ref": null,
           "rendered": "Search Random Gifs",
@@ -226,7 +226,7 @@ ShallowWrapper {
                 type="submit"
 />,
             ],
-            "className": "App__form",
+            "className": "RandomGifsComponent__form",
             "onSubmit": [Function],
           },
           "ref": null,
@@ -365,7 +365,7 @@ ShallowWrapper {
               undefined,
               undefined,
             ],
-            "className": "App__gif-container",
+            "className": "RandomGifsComponent__gif-container",
           },
           "ref": null,
           "rendered": Array [
@@ -398,15 +398,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div
-          className="App__container"
+          className="RandomGifsComponent__container"
 >
           <h2
-                    className="App__title"
+                    className="RandomGifsComponent__title"
           >
                     Search Random Gifs
           </h2>
           <form
-                    className="App__form"
+                    className="RandomGifsComponent__form"
                     onSubmit={[Function]}
           >
                     <FormGroup
@@ -455,14 +455,14 @@ ShallowWrapper {
                     />
           </form>
           <div
-                    className="App__gif-container"
+                    className="RandomGifsComponent__gif-container"
           >
                     <RandomGifs
                               gifs={undefined}
                     />
           </div>
 </div>,
-        "className": "App",
+        "className": "RandomGifsComponent",
       },
       "ref": null,
       "rendered": Object {
@@ -472,12 +472,12 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h2
-              className="App__title"
+              className="RandomGifsComponent__title"
 >
               Search Random Gifs
 </h2>,
             <form
-              className="App__form"
+              className="RandomGifsComponent__form"
               onSubmit={[Function]}
 >
               <FormGroup
@@ -526,14 +526,14 @@ ShallowWrapper {
               />
 </form>,
             <div
-              className="App__gif-container"
+              className="RandomGifsComponent__gif-container"
 >
               <RandomGifs
                             gifs={undefined}
               />
 </div>,
           ],
-          "className": "App__container",
+          "className": "RandomGifsComponent__container",
         },
         "ref": null,
         "rendered": Array [
@@ -543,7 +543,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Search Random Gifs",
-              "className": "App__title",
+              "className": "RandomGifsComponent__title",
             },
             "ref": null,
             "rendered": "Search Random Gifs",
@@ -600,7 +600,7 @@ ShallowWrapper {
                   type="submit"
 />,
               ],
-              "className": "App__form",
+              "className": "RandomGifsComponent__form",
               "onSubmit": [Function],
             },
             "ref": null,
@@ -739,7 +739,7 @@ ShallowWrapper {
                 undefined,
                 undefined,
               ],
-              "className": "App__gif-container",
+              "className": "RandomGifsComponent__gif-container",
             },
             "ref": null,
             "rendered": Array [
@@ -776,11 +776,11 @@ ShallowWrapper {
 }
 `;
 
-exports[`<App /> Should render with Spinner 1`] = `
+exports[`<RandomGifsComponent /> Should render with Spinner 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
+  Symbol(enzyme.__unrendered__): <RandomGifsComponent
     category=""
     loading={true}
     numberOfImages={3}
@@ -801,15 +801,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div
-        className="App__container"
+        className="RandomGifsComponent__container"
 >
         <h2
-                className="App__title"
+                className="RandomGifsComponent__title"
         >
                 Search Random Gifs
         </h2>
         <form
-                className="App__form"
+                className="RandomGifsComponent__form"
                 onSubmit={[Function]}
         >
                 <FormGroup
@@ -858,7 +858,7 @@ ShallowWrapper {
                 />
         </form>
         <div
-                className="App__gif-container"
+                className="RandomGifsComponent__gif-container"
         >
                 <RandomGifs
                         gifs={undefined}
@@ -866,7 +866,7 @@ ShallowWrapper {
                 <Blueprint2.Spinner />
         </div>
 </div>,
-      "className": "App",
+      "className": "RandomGifsComponent",
     },
     "ref": null,
     "rendered": Object {
@@ -876,12 +876,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2
-            className="App__title"
+            className="RandomGifsComponent__title"
 >
             Search Random Gifs
 </h2>,
           <form
-            className="App__form"
+            className="RandomGifsComponent__form"
             onSubmit={[Function]}
 >
             <FormGroup
@@ -930,7 +930,7 @@ ShallowWrapper {
             />
 </form>,
           <div
-            className="App__gif-container"
+            className="RandomGifsComponent__gif-container"
 >
             <RandomGifs
                         gifs={undefined}
@@ -938,7 +938,7 @@ ShallowWrapper {
             <Blueprint2.Spinner />
 </div>,
         ],
-        "className": "App__container",
+        "className": "RandomGifsComponent__container",
       },
       "ref": null,
       "rendered": Array [
@@ -948,7 +948,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Search Random Gifs",
-            "className": "App__title",
+            "className": "RandomGifsComponent__title",
           },
           "ref": null,
           "rendered": "Search Random Gifs",
@@ -1005,7 +1005,7 @@ ShallowWrapper {
                 type="submit"
 />,
             ],
-            "className": "App__form",
+            "className": "RandomGifsComponent__form",
             "onSubmit": [Function],
           },
           "ref": null,
@@ -1144,7 +1144,7 @@ ShallowWrapper {
               undefined,
               undefined,
             ],
-            "className": "App__gif-container",
+            "className": "RandomGifsComponent__gif-container",
           },
           "ref": null,
           "rendered": Array [
@@ -1185,15 +1185,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div
-          className="App__container"
+          className="RandomGifsComponent__container"
 >
           <h2
-                    className="App__title"
+                    className="RandomGifsComponent__title"
           >
                     Search Random Gifs
           </h2>
           <form
-                    className="App__form"
+                    className="RandomGifsComponent__form"
                     onSubmit={[Function]}
           >
                     <FormGroup
@@ -1242,7 +1242,7 @@ ShallowWrapper {
                     />
           </form>
           <div
-                    className="App__gif-container"
+                    className="RandomGifsComponent__gif-container"
           >
                     <RandomGifs
                               gifs={undefined}
@@ -1250,7 +1250,7 @@ ShallowWrapper {
                     <Blueprint2.Spinner />
           </div>
 </div>,
-        "className": "App",
+        "className": "RandomGifsComponent",
       },
       "ref": null,
       "rendered": Object {
@@ -1260,12 +1260,12 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h2
-              className="App__title"
+              className="RandomGifsComponent__title"
 >
               Search Random Gifs
 </h2>,
             <form
-              className="App__form"
+              className="RandomGifsComponent__form"
               onSubmit={[Function]}
 >
               <FormGroup
@@ -1314,7 +1314,7 @@ ShallowWrapper {
               />
 </form>,
             <div
-              className="App__gif-container"
+              className="RandomGifsComponent__gif-container"
 >
               <RandomGifs
                             gifs={undefined}
@@ -1322,7 +1322,7 @@ ShallowWrapper {
               <Blueprint2.Spinner />
 </div>,
           ],
-          "className": "App__container",
+          "className": "RandomGifsComponent__container",
         },
         "ref": null,
         "rendered": Array [
@@ -1332,7 +1332,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Search Random Gifs",
-              "className": "App__title",
+              "className": "RandomGifsComponent__title",
             },
             "ref": null,
             "rendered": "Search Random Gifs",
@@ -1389,7 +1389,7 @@ ShallowWrapper {
                   type="submit"
 />,
               ],
-              "className": "App__form",
+              "className": "RandomGifsComponent__form",
               "onSubmit": [Function],
             },
             "ref": null,
@@ -1528,7 +1528,7 @@ ShallowWrapper {
                 undefined,
                 undefined,
               ],
-              "className": "App__gif-container",
+              "className": "RandomGifsComponent__gif-container",
             },
             "ref": null,
             "rendered": Array [
@@ -1573,11 +1573,11 @@ ShallowWrapper {
 }
 `;
 
-exports[`<App /> Should render with error message 1`] = `
+exports[`<RandomGifsComponent /> Should render with error message 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
+  Symbol(enzyme.__unrendered__): <RandomGifsComponent
     category=""
     error={true}
     numberOfImages={3}
@@ -1598,15 +1598,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div
-        className="App__container"
+        className="RandomGifsComponent__container"
 >
         <h2
-                className="App__title"
+                className="RandomGifsComponent__title"
         >
                 Search Random Gifs
         </h2>
         <form
-                className="App__form"
+                className="RandomGifsComponent__form"
                 onSubmit={[Function]}
         >
                 <FormGroup
@@ -1655,19 +1655,19 @@ ShallowWrapper {
                 />
         </form>
         <div
-                className="App__gif-container"
+                className="RandomGifsComponent__gif-container"
         >
                 <RandomGifs
                         gifs={undefined}
                 />
                 <span
-                        className="App__error"
+                        className="RandomGifsComponent__error"
                 >
                         There was an error
                 </span>
         </div>
 </div>,
-      "className": "App",
+      "className": "RandomGifsComponent",
     },
     "ref": null,
     "rendered": Object {
@@ -1677,12 +1677,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2
-            className="App__title"
+            className="RandomGifsComponent__title"
 >
             Search Random Gifs
 </h2>,
           <form
-            className="App__form"
+            className="RandomGifsComponent__form"
             onSubmit={[Function]}
 >
             <FormGroup
@@ -1731,19 +1731,19 @@ ShallowWrapper {
             />
 </form>,
           <div
-            className="App__gif-container"
+            className="RandomGifsComponent__gif-container"
 >
             <RandomGifs
                         gifs={undefined}
             />
             <span
-                        className="App__error"
+                        className="RandomGifsComponent__error"
             >
                         There was an error
             </span>
 </div>,
         ],
-        "className": "App__container",
+        "className": "RandomGifsComponent__container",
       },
       "ref": null,
       "rendered": Array [
@@ -1753,7 +1753,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Search Random Gifs",
-            "className": "App__title",
+            "className": "RandomGifsComponent__title",
           },
           "ref": null,
           "rendered": "Search Random Gifs",
@@ -1810,7 +1810,7 @@ ShallowWrapper {
                 type="submit"
 />,
             ],
-            "className": "App__form",
+            "className": "RandomGifsComponent__form",
             "onSubmit": [Function],
           },
           "ref": null,
@@ -1948,12 +1948,12 @@ ShallowWrapper {
               undefined,
               undefined,
               <span
-                className="App__error"
+                className="RandomGifsComponent__error"
 >
                 There was an error
 </span>,
             ],
-            "className": "App__gif-container",
+            "className": "RandomGifsComponent__gif-container",
           },
           "ref": null,
           "rendered": Array [
@@ -1976,7 +1976,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "There was an error",
-                "className": "App__error",
+                "className": "RandomGifsComponent__error",
               },
               "ref": null,
               "rendered": "There was an error",
@@ -1997,15 +1997,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div
-          className="App__container"
+          className="RandomGifsComponent__container"
 >
           <h2
-                    className="App__title"
+                    className="RandomGifsComponent__title"
           >
                     Search Random Gifs
           </h2>
           <form
-                    className="App__form"
+                    className="RandomGifsComponent__form"
                     onSubmit={[Function]}
           >
                     <FormGroup
@@ -2054,19 +2054,19 @@ ShallowWrapper {
                     />
           </form>
           <div
-                    className="App__gif-container"
+                    className="RandomGifsComponent__gif-container"
           >
                     <RandomGifs
                               gifs={undefined}
                     />
                     <span
-                              className="App__error"
+                              className="RandomGifsComponent__error"
                     >
                               There was an error
                     </span>
           </div>
 </div>,
-        "className": "App",
+        "className": "RandomGifsComponent",
       },
       "ref": null,
       "rendered": Object {
@@ -2076,12 +2076,12 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h2
-              className="App__title"
+              className="RandomGifsComponent__title"
 >
               Search Random Gifs
 </h2>,
             <form
-              className="App__form"
+              className="RandomGifsComponent__form"
               onSubmit={[Function]}
 >
               <FormGroup
@@ -2130,19 +2130,19 @@ ShallowWrapper {
               />
 </form>,
             <div
-              className="App__gif-container"
+              className="RandomGifsComponent__gif-container"
 >
               <RandomGifs
                             gifs={undefined}
               />
               <span
-                            className="App__error"
+                            className="RandomGifsComponent__error"
               >
                             There was an error
               </span>
 </div>,
           ],
-          "className": "App__container",
+          "className": "RandomGifsComponent__container",
         },
         "ref": null,
         "rendered": Array [
@@ -2152,7 +2152,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Search Random Gifs",
-              "className": "App__title",
+              "className": "RandomGifsComponent__title",
             },
             "ref": null,
             "rendered": "Search Random Gifs",
@@ -2209,7 +2209,7 @@ ShallowWrapper {
                   type="submit"
 />,
               ],
-              "className": "App__form",
+              "className": "RandomGifsComponent__form",
               "onSubmit": [Function],
             },
             "ref": null,
@@ -2347,12 +2347,12 @@ ShallowWrapper {
                 undefined,
                 undefined,
                 <span
-                  className="App__error"
+                  className="RandomGifsComponent__error"
 >
                   There was an error
 </span>,
               ],
-              "className": "App__gif-container",
+              "className": "RandomGifsComponent__gif-container",
             },
             "ref": null,
             "rendered": Array [
@@ -2375,7 +2375,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "There was an error",
-                  "className": "App__error",
+                  "className": "RandomGifsComponent__error",
                 },
                 "ref": null,
                 "rendered": "There was an error",
@@ -2400,11 +2400,11 @@ ShallowWrapper {
 }
 `;
 
-exports[`<App /> Should render with notFound message 1`] = `
+exports[`<RandomGifsComponent /> Should render with notFound message 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
+  Symbol(enzyme.__unrendered__): <RandomGifsComponent
     category=""
     notFound={true}
     numberOfImages={3}
@@ -2425,15 +2425,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div
-        className="App__container"
+        className="RandomGifsComponent__container"
 >
         <h2
-                className="App__title"
+                className="RandomGifsComponent__title"
         >
                 Search Random Gifs
         </h2>
         <form
-                className="App__form"
+                className="RandomGifsComponent__form"
                 onSubmit={[Function]}
         >
                 <FormGroup
@@ -2482,19 +2482,19 @@ ShallowWrapper {
                 />
         </form>
         <div
-                className="App__gif-container"
+                className="RandomGifsComponent__gif-container"
         >
                 <RandomGifs
                         gifs={undefined}
                 />
                 <span
-                        className="App__error"
+                        className="RandomGifsComponent__error"
                 >
                         Gifs not found
                 </span>
         </div>
 </div>,
-      "className": "App",
+      "className": "RandomGifsComponent",
     },
     "ref": null,
     "rendered": Object {
@@ -2504,12 +2504,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2
-            className="App__title"
+            className="RandomGifsComponent__title"
 >
             Search Random Gifs
 </h2>,
           <form
-            className="App__form"
+            className="RandomGifsComponent__form"
             onSubmit={[Function]}
 >
             <FormGroup
@@ -2558,19 +2558,19 @@ ShallowWrapper {
             />
 </form>,
           <div
-            className="App__gif-container"
+            className="RandomGifsComponent__gif-container"
 >
             <RandomGifs
                         gifs={undefined}
             />
             <span
-                        className="App__error"
+                        className="RandomGifsComponent__error"
             >
                         Gifs not found
             </span>
 </div>,
         ],
-        "className": "App__container",
+        "className": "RandomGifsComponent__container",
       },
       "ref": null,
       "rendered": Array [
@@ -2580,7 +2580,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Search Random Gifs",
-            "className": "App__title",
+            "className": "RandomGifsComponent__title",
           },
           "ref": null,
           "rendered": "Search Random Gifs",
@@ -2637,7 +2637,7 @@ ShallowWrapper {
                 type="submit"
 />,
             ],
-            "className": "App__form",
+            "className": "RandomGifsComponent__form",
             "onSubmit": [Function],
           },
           "ref": null,
@@ -2774,13 +2774,13 @@ ShallowWrapper {
 />,
               undefined,
               <span
-                className="App__error"
+                className="RandomGifsComponent__error"
 >
                 Gifs not found
 </span>,
               undefined,
             ],
-            "className": "App__gif-container",
+            "className": "RandomGifsComponent__gif-container",
           },
           "ref": null,
           "rendered": Array [
@@ -2802,7 +2802,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Gifs not found",
-                "className": "App__error",
+                "className": "RandomGifsComponent__error",
               },
               "ref": null,
               "rendered": "Gifs not found",
@@ -2824,15 +2824,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div
-          className="App__container"
+          className="RandomGifsComponent__container"
 >
           <h2
-                    className="App__title"
+                    className="RandomGifsComponent__title"
           >
                     Search Random Gifs
           </h2>
           <form
-                    className="App__form"
+                    className="RandomGifsComponent__form"
                     onSubmit={[Function]}
           >
                     <FormGroup
@@ -2881,19 +2881,19 @@ ShallowWrapper {
                     />
           </form>
           <div
-                    className="App__gif-container"
+                    className="RandomGifsComponent__gif-container"
           >
                     <RandomGifs
                               gifs={undefined}
                     />
                     <span
-                              className="App__error"
+                              className="RandomGifsComponent__error"
                     >
                               Gifs not found
                     </span>
           </div>
 </div>,
-        "className": "App",
+        "className": "RandomGifsComponent",
       },
       "ref": null,
       "rendered": Object {
@@ -2903,12 +2903,12 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h2
-              className="App__title"
+              className="RandomGifsComponent__title"
 >
               Search Random Gifs
 </h2>,
             <form
-              className="App__form"
+              className="RandomGifsComponent__form"
               onSubmit={[Function]}
 >
               <FormGroup
@@ -2957,19 +2957,19 @@ ShallowWrapper {
               />
 </form>,
             <div
-              className="App__gif-container"
+              className="RandomGifsComponent__gif-container"
 >
               <RandomGifs
                             gifs={undefined}
               />
               <span
-                            className="App__error"
+                            className="RandomGifsComponent__error"
               >
                             Gifs not found
               </span>
 </div>,
           ],
-          "className": "App__container",
+          "className": "RandomGifsComponent__container",
         },
         "ref": null,
         "rendered": Array [
@@ -2979,7 +2979,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Search Random Gifs",
-              "className": "App__title",
+              "className": "RandomGifsComponent__title",
             },
             "ref": null,
             "rendered": "Search Random Gifs",
@@ -3036,7 +3036,7 @@ ShallowWrapper {
                   type="submit"
 />,
               ],
-              "className": "App__form",
+              "className": "RandomGifsComponent__form",
               "onSubmit": [Function],
             },
             "ref": null,
@@ -3173,13 +3173,13 @@ ShallowWrapper {
 />,
                 undefined,
                 <span
-                  className="App__error"
+                  className="RandomGifsComponent__error"
 >
                   Gifs not found
 </span>,
                 undefined,
               ],
-              "className": "App__gif-container",
+              "className": "RandomGifsComponent__gif-container",
             },
             "ref": null,
             "rendered": Array [
@@ -3201,7 +3201,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Gifs not found",
-                  "className": "App__error",
+                  "className": "RandomGifsComponent__error",
                 },
                 "ref": null,
                 "rendered": "Gifs not found",
@@ -3227,11 +3227,11 @@ ShallowWrapper {
 }
 `;
 
-exports[`<App /> Should render without numberOfImages and Timer 1`] = `
+exports[`<RandomGifsComponent /> Should render without numberOfImages and Timer 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
+  Symbol(enzyme.__unrendered__): <RandomGifsComponent
     category=""
     numberOfImages={3}
     showNumberOfImages={false}
@@ -3251,15 +3251,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div
-        className="App__container"
+        className="RandomGifsComponent__container"
 >
         <h2
-                className="App__title"
+                className="RandomGifsComponent__title"
         >
                 Search Random Gifs
         </h2>
         <form
-                className="App__form"
+                className="RandomGifsComponent__form"
                 onSubmit={[Function]}
         >
                 <FormGroup
@@ -3283,14 +3283,14 @@ ShallowWrapper {
                 />
         </form>
         <div
-                className="App__gif-container"
+                className="RandomGifsComponent__gif-container"
         >
                 <RandomGifs
                         gifs={undefined}
                 />
         </div>
 </div>,
-      "className": "App",
+      "className": "RandomGifsComponent",
     },
     "ref": null,
     "rendered": Object {
@@ -3300,12 +3300,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2
-            className="App__title"
+            className="RandomGifsComponent__title"
 >
             Search Random Gifs
 </h2>,
           <form
-            className="App__form"
+            className="RandomGifsComponent__form"
             onSubmit={[Function]}
 >
             <FormGroup
@@ -3329,14 +3329,14 @@ ShallowWrapper {
             />
 </form>,
           <div
-            className="App__gif-container"
+            className="RandomGifsComponent__gif-container"
 >
             <RandomGifs
                         gifs={undefined}
             />
 </div>,
         ],
-        "className": "App__container",
+        "className": "RandomGifsComponent__container",
       },
       "ref": null,
       "rendered": Array [
@@ -3346,7 +3346,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Search Random Gifs",
-            "className": "App__title",
+            "className": "RandomGifsComponent__title",
           },
           "ref": null,
           "rendered": "Search Random Gifs",
@@ -3380,7 +3380,7 @@ ShallowWrapper {
                 type="submit"
 />,
             ],
-            "className": "App__form",
+            "className": "RandomGifsComponent__form",
             "onSubmit": [Function],
           },
           "ref": null,
@@ -3452,7 +3452,7 @@ ShallowWrapper {
               undefined,
               undefined,
             ],
-            "className": "App__gif-container",
+            "className": "RandomGifsComponent__gif-container",
           },
           "ref": null,
           "rendered": Array [
@@ -3485,15 +3485,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div
-          className="App__container"
+          className="RandomGifsComponent__container"
 >
           <h2
-                    className="App__title"
+                    className="RandomGifsComponent__title"
           >
                     Search Random Gifs
           </h2>
           <form
-                    className="App__form"
+                    className="RandomGifsComponent__form"
                     onSubmit={[Function]}
           >
                     <FormGroup
@@ -3517,14 +3517,14 @@ ShallowWrapper {
                     />
           </form>
           <div
-                    className="App__gif-container"
+                    className="RandomGifsComponent__gif-container"
           >
                     <RandomGifs
                               gifs={undefined}
                     />
           </div>
 </div>,
-        "className": "App",
+        "className": "RandomGifsComponent",
       },
       "ref": null,
       "rendered": Object {
@@ -3534,12 +3534,12 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h2
-              className="App__title"
+              className="RandomGifsComponent__title"
 >
               Search Random Gifs
 </h2>,
             <form
-              className="App__form"
+              className="RandomGifsComponent__form"
               onSubmit={[Function]}
 >
               <FormGroup
@@ -3563,14 +3563,14 @@ ShallowWrapper {
               />
 </form>,
             <div
-              className="App__gif-container"
+              className="RandomGifsComponent__gif-container"
 >
               <RandomGifs
                             gifs={undefined}
               />
 </div>,
           ],
-          "className": "App__container",
+          "className": "RandomGifsComponent__container",
         },
         "ref": null,
         "rendered": Array [
@@ -3580,7 +3580,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Search Random Gifs",
-              "className": "App__title",
+              "className": "RandomGifsComponent__title",
             },
             "ref": null,
             "rendered": "Search Random Gifs",
@@ -3614,7 +3614,7 @@ ShallowWrapper {
                   type="submit"
 />,
               ],
-              "className": "App__form",
+              "className": "RandomGifsComponent__form",
               "onSubmit": [Function],
             },
             "ref": null,
@@ -3686,7 +3686,7 @@ ShallowWrapper {
                 undefined,
                 undefined,
               ],
-              "className": "App__gif-container",
+              "className": "RandomGifsComponent__gif-container",
             },
             "ref": null,
             "rendered": Array [
