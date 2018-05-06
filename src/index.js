@@ -14,7 +14,9 @@ const reducer = combineReducers({
   ...reducers
 });
 
-const reduxLogicMiddleware = createLogicMiddleware(logics, {});
+const reduxLogicMiddleware = createLogicMiddleware(logics, {
+  APIKEY: 'h7XYSMDQGAe7jdli56bt5jvHeE6BVR2m'
+});
 
 const store = createStore(
   reducer,
