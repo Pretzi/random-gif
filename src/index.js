@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import { createLogicMiddleware } from 'redux-logic';
+import axios from 'axios';
 import reducers from './reducers';
 import logics from './logics';
 import './index.css';
@@ -15,6 +16,7 @@ const reducer = combineReducers({
 });
 
 const reduxLogicMiddleware = createLogicMiddleware(logics, {
+  axios,
   APIKEY: 'h7XYSMDQGAe7jdli56bt5jvHeE6BVR2m'
 });
 
