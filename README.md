@@ -5,8 +5,7 @@
 
 React component that shows 3 random images from Giphy every X seconds using the Giphy api: https://developers.giphy.com/docs/. 
 
-![](readme-image.png)
-<img src="readme-image.png" width="250"/> <img src="readme-image-2.png" width="250"/> <img src="readme-image-3.png" width="250"/> 
+<img src="readme-image-1.png" width="250"/> <img src="readme-image-2.png" width="250"/> <img src="readme-image-3.png" width="250"/> 
 
 ## Installation
 
