@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import { createLogicMiddleware } from 'redux-logic';
 import axios from 'axios';
 import reducers from './reducers';
 import logics from './logics';
 import './index.css';
-import App from './App';
+import RandomGifsComponent from './RandomGifsComponent';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -28,8 +27,10 @@ const store = createStore(
 );
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <RandomGifsComponent store={store} />,
   document.getElementById('root')
 );
+
+const ApplicasterTest = () => <RandomGifsComponent store={store} />;
+
+export default ApplicasterTest
