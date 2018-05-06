@@ -21,12 +21,12 @@ Just import the component and use it in your project
 import RandomGifs from 'appcalister-test-random-gifs/lib'
 ```
 
-| Prop               | Default Vlalue |
-| numberOfImages     | 3              |
-| timer              | 10             |
-| showNumberOfimages | true           |
-| showTimer          | true           |
-
+Prop | Default Vlalue
+------------ | -------------
+numberOfImages | 3
+timer | 10
+showNumberOfimages | true
+showTimer | true
 
 ## Development setup
 
