@@ -27,7 +27,7 @@
   align-items: center;
 }
 
-.App__not-found {
+.App__error {
   font-weight: bold;
 }
 

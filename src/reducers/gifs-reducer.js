@@ -4,13 +4,15 @@ const {
   FETCH_GIFS,
   FETCH_GIFS_SUCCESS,
   FETCH_GIFS_ERROR,
-  CLEAR_GIFS
+  CLEAR_GIFS,
+  GIFS_NOT_FOUND
 } = gifsActions;
 
 const initialState = {
   loading: false,
   entities: [],
-  notFound: false
+  notFound: false,
+  error: false
 };
 
 export default function reducer(state = initialState, action) {
@@ -18,7 +20,8 @@ export default function reducer(state = initialState, action) {
     case FETCH_GIFS: {
       return Object.assign({}, state, {
         loading: true,
-        notFound: false
+        notFound: false,
+        error: false
       });
     }
 
@@ -33,6 +36,13 @@ export default function reducer(state = initialState, action) {
     }
 
     case FETCH_GIFS_ERROR: {
+      return Object.assign({}, state, {
+        loading: false,
+        error: true
+      });
+    }
+
+    case GIFS_NOT_FOUND: {
       return Object.assign({}, state, {
         loading: false,
         notFound: action.payload.notFound

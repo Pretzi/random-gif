@@ -54,13 +54,15 @@ class App extends Component {
       showNumberOfImages,
       showTimer,
       loading,
-      notFound
+      notFound,
+      error
     } = this.props
 
     return (
       <div className="App">
         <div className="App__container">
           <h2 className="App__title">Search Random Gifs</h2>
+
           <form
             className="App__form"
             onSubmit={this.handleSubmit}
@@ -113,9 +115,14 @@ class App extends Component {
 
           <div className="App__gif-container">
             <RandomGifs gifs={gifs} />
+
             {loading && <Spinner />}
+
             {notFound &&
-              <span className="App__not-found">Gifs not found</span>
+              <span className="App__error">Gifs not found</span>
+            }
+            { error &&
+              <span className="App__error">There was an error</span>
             }
           </div>
         </div>
@@ -133,7 +140,7 @@ App.defaultProps = {
   numberOfImages: 3,
   timer: 10,
   showNumberOfImages: true,
-  showTimer: true,  
+  showTimer: true,
 };
 
 export default AppContainer(App);

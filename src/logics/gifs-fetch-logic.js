@@ -8,7 +8,8 @@ const {
   FETCH_GIFS_ERROR,
   FETCH_GIFS_SUCCESS,
   CLEAR_GIFS,
-  FETCH_GIFS_CANCEL
+  FETCH_GIFS_CANCEL,
+  GIFS_NOT_FOUND
 } = gifsActions;
 
 export const fetchGifs = createLogic({
@@ -42,7 +43,7 @@ export const fetchGifs = createLogic({
 
             if(gif.length === 0) {
               dispatch({
-                type: FETCH_GIFS_ERROR,
+                type: GIFS_NOT_FOUND,
                 payload: {
                   notFound: true
                 }
