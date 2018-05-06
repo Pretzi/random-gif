@@ -1,7 +1,5 @@
 import { createLogic } from 'redux-logic';
 import { gifsActions } from '../actions/gifs-actions';
-import axios from 'axios';
-import { setTimeout } from 'timers';
 
 const {
   FETCH_GIFS,
@@ -17,62 +15,69 @@ export const fetchGifs = createLogic({
   latest: true,
   warnTimeout: 0,
   cancelType: FETCH_GIFS_CANCEL,
-  process({APIKEY, action, getState }, dispatch, done) {
+  process({axios, APIKEY, action, getState }, dispatch, done) {
     const {
       category,
       numberOfImages,
       timer
     } = action.payload
 
-    if(getState().gifs.entities.length === numberOfImages) {
+    if (getState().gifs.entities.length === numberOfImages) {
       dispatch({
         type: CLEAR_GIFS
       })
     }
 
-    for (let i = 0; i < numberOfImages; i++) {
-      axios.get('https://api.giphy.com/v1/gifs/random', {
+    return axios
+      .get('https://api.giphy.com/v1/gifs/random', {
         params: {
           api_key: APIKEY,
           tag: category
         }
       })
-        .then(response => {
-          if (response.status === 200) {
-            const gif = response.data.data;
+      .then(response => {
+        if (response.status === 200) {
+          const gif = response.data.data;
 
-            if(gif.length === 0) {
-              dispatch({
-                type: GIFS_NOT_FOUND,
-                payload: {
-                  notFound: true
-                }
-              });
-              
-              dispatch({
-                type: FETCH_GIFS_CANCEL
-              })
-            }
+          if (gif.length === 0) {
+            dispatch({
+              type: GIFS_NOT_FOUND,
+              payload: {
+                notFound: true
+              }
+            });
 
             dispatch({
-              type: FETCH_GIFS_SUCCESS,
-              payload: gif
-            });
+              type: FETCH_GIFS_CANCEL
+            })
           }
-        })
-        .catch(() => {
-          dispatch({
-            type: FETCH_GIFS_ERROR
-          });
-        })
-    }
 
-    setTimeout(() => {
-      dispatch({
-        type: FETCH_GIFS,
-        payload: action.payload
+          dispatch({
+            type: FETCH_GIFS_SUCCESS,
+            payload: gif
+          });
+        }
       })
-    }, timer * 1000);
+      .catch(() => {
+        dispatch({
+          type: FETCH_GIFS_ERROR
+        });
+      })
+      .then(() => {
+        if (getState().gifs.entities.length !== numberOfImages) {
+          dispatch({
+            type: FETCH_GIFS,
+            payload: action.payload
+          })
+        } else {
+          setTimeout(() => {
+            dispatch({
+              type: FETCH_GIFS,
+              payload: action.payload
+            })
+          }, timer * 1000);
+        }
+      })
   }
 });
 
