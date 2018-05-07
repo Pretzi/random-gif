@@ -57,7 +57,7 @@ export class RandomGifsComponent extends Component {
       notFound,
       error
     } = this.props
-
+    
     return (
       <div className="RandomGifsComponent">
         <div className="RandomGifsComponent__container">

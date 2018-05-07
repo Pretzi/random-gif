@@ -31,7 +31,7 @@ showTimer | true
 
 ## Development setup
 
-Run tests
+Run apps
 ```sh
 yarn
 npm start

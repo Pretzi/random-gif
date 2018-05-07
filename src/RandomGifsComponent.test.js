@@ -28,7 +28,6 @@ describe('<RandomGifsComponent />', () => {
     );
     expect(wrapper).toMatchSnapshot();
     expect(wrapper.contains(<Spinner />)).toEqual(true);
-
   })
 
   it('Should render with error message', () => {
